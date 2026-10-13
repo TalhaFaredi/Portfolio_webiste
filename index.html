@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Talha Fareedi | Voice Agents, Agent Harness, AWS Bedrock</title>
-    <meta name="description" content="Muhammad Talha Fareedi builds voice agents, calling agents, voice clones, AI CSR platforms, and transformer models on scalable AWS and Amazon Bedrock. Agent harness and prime agents with Claude Opus, GPT, and Gemini 4 Argon.">
+    <meta name="description" content="AI engineer: LLMs, SLMs, LoRA, QLoRA, efficient fine-tuning, logical agentic systems, RAG, vector databases, REST APIs. AWS — S3, Bedrock, Lambda, SageMaker, ECS, RDS, DynamoDB, API Gateway, and more.">
     <link rel="icon" type="image/jpeg" href="assets/profile-placeholder.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -19,6 +19,7 @@
             <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#ai">AI</a>
+                <a href="#stack">Stack</a>
                 <a href="#wireless">Wireless</a>
                 <a href="#projects">Projects</a>
                 <a href="#papers">Papers</a>
@@ -112,14 +113,14 @@
                     <p>A <strong>prime agent</strong> plans, writes todos, and delegates to subagents inside an <strong>agent harness</strong>: filesystem memory, tool use, and a human checkpoint. LangGraph and MCP wire that harness to the apps around it.</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-cloud card-icon"></i>
-                    <h3>Scalable AWS &amp; Bedrock</h3>
-                    <p>Production agents run on <strong>scalable AWS</strong> systems. <strong>Amazon Bedrock</strong> is where I call Claude Opus, GPT, and Gemini-class models without hosting every weight myself, with the same IAM, logs, and queues as the rest of the stack.</p>
+                    <i class="fas fa-sliders card-icon"></i>
+                    <h3>LLMs, SLMs &amp; fine-tuning</h3>
+                    <p><strong>LLMs</strong> for open-ended work; <strong>small language models (SLMs)</strong> where latency and cost matter. Adaptation with <strong>LoRA</strong> and <strong>QLoRA</strong>, PEFT, and <strong>efficient fine-tuning</strong> plus GPTQ/AWQ quantization so one base model fits many products.</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-database card-icon"></i>
-                    <h3>RAG, QLoRA, context</h3>
-                    <p>Hybrid and vector search (Pinecone, Qdrant, pgvector), then a small adaptation step — QLoRA or quantization — so a general model fits one job without a full retrain. Context engineering matters more than a longer prompt.</p>
+                    <i class="fas fa-sitemap card-icon"></i>
+                    <h3>Logical agentic systems</h3>
+                    <p>Agents wired as explicit graphs: conditions, tool calls, and typed outputs your code can branch on — not one long chat loop. Same idea for local SLMs on a GPU box or frontier models on Bedrock.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-code-branch card-icon"></i>
@@ -140,12 +141,176 @@
                 <span class="pill">GPT</span>
                 <span class="pill">Gemini 4 Argon</span>
                 <span class="pill">Active Memory</span>
+                <span class="pill">LLMs</span>
+                <span class="pill">SLMs</span>
+                <span class="pill">LoRA</span>
+                <span class="pill">QLoRA</span>
                 <span class="pill">MCP</span>
             </div>
         </div>
     </section>
 
-    <section id="wireless" class="section">
+    <section id="stack" class="section">
+        <div class="container">
+            <h2 class="section-title">AI Engineering Stack</h2>
+            <p class="section-sub">AWS services, data stores, and APIs called out separately — what I use to ship agentic AI in production.</p>
+            <div class="stack-grid">
+                <div class="stack-block">
+                    <h3>Amazon Web Services (AWS)</h3>
+                    <p>Each service has a clear job in the pipeline; together they form a <strong>scalable AWS</strong> stack for AI products.</p>
+                    <ul>
+                        <li>Amazon S3</li>
+                        <li>S3 buckets</li>
+                        <li>Amazon Bedrock</li>
+                        <li>AWS Lambda</li>
+                        <li>API Gateway</li>
+                        <li>Amazon ECS</li>
+                        <li>AWS Fargate</li>
+                        <li>Amazon EKS</li>
+                        <li>Amazon SageMaker</li>
+                        <li>Amazon RDS</li>
+                        <li>Amazon DynamoDB</li>
+                        <li>Amazon ElastiCache</li>
+                        <li>Amazon SQS</li>
+                        <li>Amazon SNS</li>
+                        <li>EventBridge</li>
+                        <li>Step Functions</li>
+                        <li>AWS IAM</li>
+                        <li>CloudWatch</li>
+                        <li>Secrets Manager</li>
+                        <li>Amazon VPC</li>
+                        <li>CloudFront</li>
+                        <li>EC2</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>Models &amp; adaptation</h3>
+                    <p>From frontier <strong>LLMs</strong> to on-device <strong>small language models</strong>.</p>
+                    <ul>
+                        <li>LLMs</li>
+                        <li>SLMs</li>
+                        <li>LoRA</li>
+                        <li>QLoRA</li>
+                        <li>PEFT</li>
+                        <li>efficient fine-tuning</li>
+                        <li>quantization</li>
+                        <li>GPTQ</li>
+                        <li>AWQ</li>
+                        <li>Hugging Face</li>
+                        <li>PyTorch</li>
+                        <li>TensorFlow</li>
+                        <li>Transformers</li>
+                        <li>embeddings</li>
+                        <li>rerankers</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>Agentic &amp; orchestration</h3>
+                    <p><strong>Logical agentic systems</strong>, harnesses, and tool protocols.</p>
+                    <ul>
+                        <li>agent harness</li>
+                        <li>prime agents</li>
+                        <li>logical agentic systems</li>
+                        <li>LangGraph</li>
+                        <li>LangChain</li>
+                        <li>CrewAI</li>
+                        <li>MCP</li>
+                        <li>tool calling</li>
+                        <li>multi-agent</li>
+                        <li>Agentic RAG</li>
+                        <li>context engineering</li>
+                        <li>human-in-the-loop</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>Vector &amp; search stores</h3>
+                    <p>RAG, hybrid search, and graph-backed retrieval.</p>
+                    <ul>
+                        <li>Pinecone</li>
+                        <li>Qdrant</li>
+                        <li>Weaviate</li>
+                        <li>Milvus</li>
+                        <li>pgvector</li>
+                        <li>Chroma</li>
+                        <li>FAISS</li>
+                        <li>Redis vector</li>
+                        <li>Elasticsearch</li>
+                        <li>OpenSearch</li>
+                        <li>Neo4j</li>
+                        <li>hybrid search</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>Databases &amp; object storage</h3>
+                    <p>App state, analytics, and raw files — often in <strong>S3 buckets</strong> before embedding.</p>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                        <li>DynamoDB</li>
+                        <li>RDS</li>
+                        <li>SQLite</li>
+                        <li>Supabase</li>
+                        <li>object storage</li>
+                        <li>data lakes</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>APIs &amp; backends</h3>
+                    <p>Services agents and frontends call into.</p>
+                    <ul>
+                        <li>REST APIs</li>
+                        <li>FastAPI</li>
+                        <li>Django REST</li>
+                        <li>Flask</li>
+                        <li>WebSockets</li>
+                        <li>webhooks</li>
+                        <li>OpenAPI</li>
+                        <li>GraphQL</li>
+                        <li>OAuth</li>
+                        <li>JWT</li>
+                        <li>rate limiting</li>
+                        <li>Twilio</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>MLOps &amp; delivery</h3>
+                    <p>Build, deploy, and watch models in prod.</p>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>CI/CD</li>
+                        <li>GitHub Actions</li>
+                        <li>MLflow</li>
+                        <li>monitoring</li>
+                        <li>logging</li>
+                        <li>Azure</li>
+                        <li>GPU inference</li>
+                        <li>batch jobs</li>
+                    </ul>
+                </div>
+                <div class="stack-block">
+                    <h3>Domains I ship</h3>
+                    <p>End-to-end AI engineering across product types.</p>
+                    <ul>
+                        <li>voice agents</li>
+                        <li>calling agents</li>
+                        <li>voice clones</li>
+                        <li>AI CSR</li>
+                        <li>computer vision</li>
+                        <li>RAG chatbots</li>
+                        <li>MLOps pipelines</li>
+                        <li>biomedical AI</li>
+                        <li>ATS / ranking</li>
+                        <li>Streamlit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wireless" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Wireless Systems — Current Work</h2>
             <p class="section-sub">M.S. research with the <a href="https://sites.google.com/view/wisys" target="_blank" rel="noopener">Intelligent Wireless Systems Lab</a> at Chung-Ang. AI on the physical layer of 5G/6G.</p>
@@ -174,7 +339,7 @@
         </div>
     </section>
 
-    <section id="projects" class="section section-alt">
+    <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="card-grid">
