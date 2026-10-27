@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
 
@@ -23,6 +23,7 @@
                 <a href="#wireless">Wireless</a>
                 <a href="#projects">Projects</a>
                 <a href="#papers">Papers</a>
+                <a href="#reading">Reading</a>
                 <a href="#path">Path</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -43,7 +44,7 @@
                     <strong>LLMs</strong>, <strong>agent harness</strong>, <strong>agentic</strong> and
                     <strong>multimodal</strong> systems — I work on the <strong>latest technology</strong>, deploying
                     on <strong>AWS platforms</strong> (Bedrock, Lambda, SageMaker, S3, ECS) and
-                    <strong>RunPod GPUs</strong> for training and inference.
+                    <strong>RunPod GPUs and workers</strong> for training and inference.
                 </p>
                 <div class="hero-buttons">
                     <a href="https://github.com/TalhaFaredi" target="_blank" rel="noopener" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
@@ -51,7 +52,7 @@
                 </div>
             </div>
             <div class="hero-photo">
-                <img src="assets/profile-photo.jpg" alt="Muhammad Talha Fareedi"
+                <img src="assets/profile-photo.jpg?v=2" alt="Muhammad Talha Fareedi"
                      onerror="this.onerror=null;this.src='assets/profile-placeholder.jpg'">
             </div>
         </div>
@@ -113,7 +114,7 @@
                 <div class="card">
                     <i class="fas fa-diagram-project card-icon"></i>
                     <h3>Agent harness &amp; prime agents</h3>
-                    <p>A <strong>prime agent</strong> plans, writes todos, and delegates to subagents inside an <strong>agent harness</strong>: filesystem memory, tool use, and a human checkpoint. LangGraph and MCP wire that harness to the apps around it.</p>
+                    <p>A <strong>prime agent</strong> plans, writes todos, and delegates to subagents inside an <strong>agent harness</strong>: filesystem memory, tool use, and a human checkpoint. The harness is executable code. <a href="#reading">OO-Harness</a> grows a class hierarchy and routes each task; <a href="#reading">Harness²</a> revises that code on the current task, then keeps the lesson. LangGraph and MCP wire the harness to the apps around it.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-sliders card-icon"></i>
@@ -159,6 +160,9 @@
                 <span class="pill">LoRA</span>
                 <span class="pill">QLoRA</span>
                 <span class="pill">MCP</span>
+                <span class="pill">OO-Harness</span>
+                <span class="pill">Harness²</span>
+                <span class="pill">ResonanceDB</span>
             </div>
         </div>
     </section>
@@ -251,6 +255,8 @@
                         <li>OpenSearch</li>
                         <li>Neo4j</li>
                         <li>hybrid search</li>
+                        <li>ResonanceDB</li>
+                        <li>phase-aware retrieval</li>li>
                     </ul>
                 </div>
                 <div class="stack-block">
@@ -432,6 +438,45 @@
                 </div>
             </div>
             <p class="more-link"><a href="https://github.com/TalhaFaredi" target="_blank" rel="noopener">All projects on GitHub <i class="fas fa-arrow-right"></i></a></p>
+        </div>
+    </section>
+
+    <section id="reading" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Research I follow</h2>
+            <p class="section-sub">October 2026. The harness is code you can evolve, and semantic memory is starting to keep phase as well as amplitude. These are the papers I design against.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card-meta">arXiv:2610.28380 · 20 Oct 2026 · Google Cloud AI Research</span>
+                    <h3><a href="https://arxiv.org/abs/2610.28380" target="_blank" rel="noopener">Object-Oriented Harness</a></h3>
+                    <p>Li, Mishra, Ming, Chen, and colleagues, with UIUC. An evolution agent builds harness subclasses from execution records. Inheritance keeps shared behavior; a router uses routing lessons to pick a specialist or keep the base result. Held-out, with a frozen executor, primary scores move from 61.6 to 77.4 on AutomationBench, 25.5 to 39.5 on Workspace-Bench, and 31.2 to 37.5 strict pass on Toolathlon-GYM. That is up to 15.79 points over the base, ahead of Meta-Harness and Agentic Harness Engineering. <a href="https://arxiv.org/pdf/2610.28380" target="_blank" rel="noopener">PDF</a>.</p>
+                </div>
+                <div class="card">
+                    <span class="card-meta">arXiv:2610.14224 · Oct 2026 · Google Cloud AI Research</span>
+                    <h3><a href="https://arxiv.org/abs/2610.14224" target="_blank" rel="noopener">Harness²: recursive harnessing</a></h3>
+                    <p>Xu, Chen, CuiZhu, Mishra, Ming, and colleagues. Model weights stay frozen. Task-level recursion proposes harness edits, probes them on the same task, and composes the changes the behavioral contrast supports, with no ground-truth verifier. Harnessing-level recursion stores harnesses and lessons for the next task. One step improves GLM-5 and Gemini 3.5 Flash by up to 11.5 points on WorkBuddy-Bench, 4.5 on JobBench, and 11.8 points on LAB partial pass. A larger recursion budget adds more. <a href="https://arxiv.org/pdf/2610.14224" target="_blank" rel="noopener">PDF</a> · <a href="https://github.com/google-research/harness2" target="_blank" rel="noopener">Code</a> · <a href="https://harness2.github.io" target="_blank" rel="noopener">Site</a>.</p>
+                </div>
+                <div class="card">
+                    <span class="card-meta">arXiv:2509.09691 · 21 Aug 2025</span>
+                    <h3><a href="https://arxiv.org/abs/2509.09691" target="_blank" rel="noopener">Wave-based semantic memory</a></h3>
+                    <p>Listopad. A vector becomes a complex waveform, amplitude times a phase: ψ(x) = A(x) e<sup>iφ(x)</sup>. The resonance score measures constructive interference across dimensions and stays in [0, 1]. A sign-to-phase map keeps ordinary embeddings valid — positive components at phase 0, negative at π. Phase-enriched queries improve top-k when the distinction is negation, inversion, or a context shift. Implemented in ResonanceDB. <a href="https://arxiv.org/pdf/2509.09691" target="_blank" rel="noopener">PDF</a> · <a href="https://github.com/LexProfi/ResonanceDB" target="_blank" rel="noopener">Code</a>.</p>
+                </div>
+                <div class="card">
+                    <span class="card-meta">arXiv:2603.28052 · Mar 2026 · Stanford</span>
+                    <h3><a href="https://arxiv.org/abs/2603.28052" target="_blank" rel="noopener">Meta-Harness</a></h3>
+                    <p>Lee, Nair, Zhang, Lee, Khattab, and Finn. The global-harness search that OO-Harness and Harness² are measured against. A coding agent reads prior harness source, scores, and traces from a filesystem. One discovered harness gains 7.7 points on online text classification at 4× fewer context tokens, and 4.7 points on average across five held-out models on 200 IMO-level problems. The other global line is <a href="https://arxiv.org/abs/2604.25850" target="_blank" rel="noopener">Agentic Harness Engineering</a> (Lin et al., Apr 2026): ten iterations take Terminal-Bench 2 pass@1 from 69.7% to 77.0%.</p>
+                </div>
+                <div class="card">
+                    <span class="card-meta">arXiv:2609.04280 · 3 Sep 2026</span>
+                    <h3><a href="https://arxiv.org/abs/2609.04280" target="_blank" rel="noopener">EvoHarnessBench</a></h3>
+                    <p>Ke and colleagues. The harness changes under the agent: 17 streams, 802 tasks, 520 tools, 42 skills, and 62 specialist agents. Expanding tools, skills, or specialists can drop scores on tasks the agent already solved — harness-induced forgetting. Keeping earlier competence and adapting to the new capabilities pull in different directions. <a href="https://arxiv.org/pdf/2609.04280" target="_blank" rel="noopener">PDF</a>.</p>
+                </div>
+                <div class="card">
+                    <span class="card-meta">ResonanceDB · 2026 follow-on</span>
+                    <h3><a href="https://www.evacortex.ai/blog/resonancedb-2-1-context-modulated-queries" target="_blank" rel="noopener">ResonanceDB after the paper</a></h3>
+                    <p>The <a href="https://doi.org/10.5281/zenodo.18421304" target="_blank" rel="noopener">30 Jan 2026 implementation note</a> covers segmented storage, phase-domain sharding, and mmap I/O. <a href="https://www.evacortex.ai/blog/resonancedb-v2-0-2-wal-waveform-indexing" target="_blank" rel="noopener">Server v2.0.2</a> adds a write-ahead log and persisted IVF plus Vamana indexes. The index chooses candidates; the resonance kernel still decides relevance. They report up to 68× lower median latency and 0.994 Recall@10. Version 2.1.0 adds context-modulated queries: a weight in [0, 1] on each phase dimension, applied while scoring.</p>
+                </div>
+            </div>
         </div>
     </section>
 
