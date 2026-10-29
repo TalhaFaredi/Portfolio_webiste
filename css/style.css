@@ -16,7 +16,7 @@
     --transition: 0.25s ease;
 }
 
-body.dark {
+html.dark {
     --bg: #0e1512;
     --bg-alt: #121a16;
     --card: #16211c;
@@ -64,7 +64,7 @@ body {
 }
 .bg-mark.right { left: auto; right: var(--x); }
 .bg-mark img { width: 28px; height: 28px; display: block; opacity: 1; }
-body.dark .bg-mark {
+html.dark .bg-mark {
     background-color: #fff;
     border-color: #e5e9ee;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
@@ -101,7 +101,20 @@ a { color: var(--accent); }
     text-decoration: none;
     color: var(--text);
 }
-.logo i { color: var(--accent); }
+.logo-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, var(--accent), var(--accent-2));
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    flex-shrink: 0;
+}
 .nav-links { display: flex; gap: 4px; }
 .nav-links a {
     text-decoration: none;
@@ -481,12 +494,12 @@ a { color: var(--accent); }
     }
     .nav-links.open { display: flex; }
     .hamburger { display: flex; }
-    .bg-field { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
     .bg-mark { animation: none; }
 }
 @media (max-width: 800px) {
+    .bg-field { display: none; }
     .hero-inner { grid-template-columns: 1fr; text-align: center; }
     .hero-text { display: flex; flex-direction: column; align-items: center; }
     .hero-buttons { justify-content: center; }

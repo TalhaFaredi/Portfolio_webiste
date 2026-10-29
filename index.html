@@ -7,26 +7,48 @@
     <meta name="description" content="Muhammad Talha Fareedi builds agentic systems on AWS and RunPod. October 2026: Kimi K3.1 Pro, Claude Code, Goose, Kimi Code, OpenClaude, OpenCode, Muse Wonder, and vector search.">
     <meta name="keywords" content="Kimi K3.1 Pro, Kimi 3.1 Pro, Kimi Code, Claude Code, Goose, OpenClaude, OpenCode, Codex CLI, Aider, agent harness, vector database, Pinecone, Qdrant, Milvus, Weaviate, pgvector, FAISS, ResonanceDB, Claude Opus 5.5, GPT-6.1 Sol, Gemini 4 Carbon, Gemini 4 Argon, Muse Wonder, DeepSeek, Qwen, GLM">
     <link rel="icon" type="image/jpeg" href="assets/profile-placeholder.jpg">
+    <meta name="color-scheme" content="dark light">
+    <script>
+        (function () {
+            var dark = true;
+            try { dark = localStorage.getItem('theme') !== 'light'; } catch (e) {}
+            var root = document.documentElement;
+            root.classList.toggle('dark', dark);
+            root.style.colorScheme = dark ? 'dark' : 'light';
+        })();
+    </script>
+    <style>
+        html { background: #fff; color: #1e293b; }
+        html.dark { background: #0e1512; color: #e8efe9; }
+        body { background: inherit; color: inherit; }
+    </style>
+    <link rel="preload" href="assets/logos/openai.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="assets/logos/google.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="assets/logos/nvidia.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="assets/logos/aws.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="assets/logos/anthropic.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="assets/logos/meta.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="assets/logos/microsoft.svg" as="image" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=14">
+    <link rel="stylesheet" href="css/style.css?v=15">
 </head>
-<body class="dark">
+<body>
 
     <div class="bg-field" aria-hidden="true">
-        <span class="bg-mark" style="--x:22px;--y:18%;--t:22s;--delay:-2s"><img src="assets/logos/openai.svg" alt=""></span>
-        <span class="bg-mark" style="--x:22px;--y:40%;--t:26s;--delay:-8s"><img src="assets/logos/google.svg" alt=""></span>
-        <span class="bg-mark" style="--x:22px;--y:62%;--t:24s;--delay:-4s"><img src="assets/logos/nvidia.svg" alt=""></span>
-        <span class="bg-mark" style="--x:22px;--y:84%;--t:20s;--delay:-11s"><img src="assets/logos/aws.svg" alt=""></span>
-        <span class="bg-mark right" style="--x:22px;--y:28%;--t:23s;--delay:-6s"><img src="assets/logos/anthropic.svg" alt=""></span>
-        <span class="bg-mark right" style="--x:22px;--y:50%;--t:27s;--delay:-1s"><img src="assets/logos/meta.svg" alt=""></span>
-        <span class="bg-mark right" style="--x:22px;--y:72%;--t:21s;--delay:-9s"><img src="assets/logos/microsoft.svg" alt=""></span>
+        <span class="bg-mark" style="--x:22px;--y:18%;--t:22s;--delay:-2s"><img src="assets/logos/openai.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
+        <span class="bg-mark" style="--x:22px;--y:40%;--t:26s;--delay:-8s"><img src="assets/logos/google.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
+        <span class="bg-mark" style="--x:22px;--y:62%;--t:24s;--delay:-4s"><img src="assets/logos/nvidia.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
+        <span class="bg-mark" style="--x:22px;--y:84%;--t:20s;--delay:-11s"><img src="assets/logos/aws.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
+        <span class="bg-mark right" style="--x:22px;--y:28%;--t:23s;--delay:-6s"><img src="assets/logos/anthropic.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
+        <span class="bg-mark right" style="--x:22px;--y:50%;--t:27s;--delay:-1s"><img src="assets/logos/meta.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
+        <span class="bg-mark right" style="--x:22px;--y:72%;--t:21s;--delay:-9s"><img src="assets/logos/microsoft.svg" alt="" width="28" height="28" decoding="sync" fetchpriority="high"></span>
     </div>
 
     <nav class="nav">
         <div class="container nav-inner">
-            <a href="#" class="logo"><i class="fas fa-brain"></i> Talha Fareedi</a>
+            <a href="#" class="logo"><span class="logo-mark" aria-hidden="true">TF</span> Talha Fareedi</a>
             <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#ai">AI</a>
@@ -669,6 +691,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=4"></script>
+    <script src="js/main.js?v=5"></script>
 </body>
 </html>

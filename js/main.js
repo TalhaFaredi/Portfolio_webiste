@@ -7,14 +7,15 @@ const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = themeToggle.querySelector('i');
 
 function applyTheme(dark) {
-    document.body.classList.toggle('dark', dark);
+    document.documentElement.classList.toggle('dark', dark);
+    document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
     themeIcon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
     localStorage.setItem('theme', dark ? 'dark' : 'light');
 }
 
-applyTheme(localStorage.getItem('theme') !== 'light');
+applyTheme(document.documentElement.classList.contains('dark'));
 themeToggle.addEventListener('click', () => {
-    applyTheme(!document.body.classList.contains('dark'));
+    applyTheme(!document.documentElement.classList.contains('dark'));
 });
 
 // Mobile menu
