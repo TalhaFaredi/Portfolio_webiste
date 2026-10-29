@@ -12,7 +12,7 @@ function applyTheme(dark) {
     localStorage.setItem('theme', dark ? 'dark' : 'light');
 }
 
-applyTheme(localStorage.getItem('theme') === 'dark');
+applyTheme(localStorage.getItem('theme') !== 'light');
 themeToggle.addEventListener('click', () => {
     applyTheme(!document.body.classList.contains('dark'));
 });

@@ -10,9 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=8">
+    <link rel="stylesheet" href="css/style.css?v=14">
 </head>
-<body>
+<body class="dark">
+
+    <div class="bg-field" aria-hidden="true">
+        <span class="bg-mark" style="--x:22px;--y:18%;--t:22s;--delay:-2s"><img src="assets/logos/openai.svg" alt=""></span>
+        <span class="bg-mark" style="--x:22px;--y:40%;--t:26s;--delay:-8s"><img src="assets/logos/google.svg" alt=""></span>
+        <span class="bg-mark" style="--x:22px;--y:62%;--t:24s;--delay:-4s"><img src="assets/logos/nvidia.svg" alt=""></span>
+        <span class="bg-mark" style="--x:22px;--y:84%;--t:20s;--delay:-11s"><img src="assets/logos/aws.svg" alt=""></span>
+        <span class="bg-mark right" style="--x:22px;--y:28%;--t:23s;--delay:-6s"><img src="assets/logos/anthropic.svg" alt=""></span>
+        <span class="bg-mark right" style="--x:22px;--y:50%;--t:27s;--delay:-1s"><img src="assets/logos/meta.svg" alt=""></span>
+        <span class="bg-mark right" style="--x:22px;--y:72%;--t:21s;--delay:-9s"><img src="assets/logos/microsoft.svg" alt=""></span>
+    </div>
 
     <nav class="nav">
         <div class="container nav-inner">
@@ -30,7 +40,7 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-sun"></i></button>
                 <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
@@ -659,6 +669,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=3"></script>
+    <script src="js/main.js?v=4"></script>
 </body>
 </html>
