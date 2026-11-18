@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammad Talha Fareedi portfolio</title>
+  <desc id="desc">A dark green banner showing portfolio focus areas: AI engineering, agentic systems, and wireless research.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#0e1512"/>
+      <stop offset="1" stop-color="#17382c"/>
+    </linearGradient>
+    <linearGradient id="accent" x2="1" y2="1">
+      <stop stop-color="#34d399"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" opacity=".11"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#dots)"/>
+  <circle cx="1040" cy="156" r="188" fill="none" stroke="#34d399" stroke-width="1.5" opacity=".22"/>
+  <circle cx="1040" cy="156" r="127" fill="none" stroke="#34d399" stroke-width="1.5" opacity=".34"/>
+  <circle cx="1040" cy="156" r="68" fill="none" stroke="#34d399" stroke-width="1.5" opacity=".48"/>
+  <circle cx="1040" cy="156" r="12" fill="url(#accent)"/>
+  <circle cx="905" cy="70" r="6" fill="#34d399"/>
+  <circle cx="1102" cy="46" r="6" fill="#2dd4bf"/>
+  <circle cx="953" cy="268" r="6" fill="#2dd4bf"/>
+  <circle cx="1163" cy="220" r="6" fill="#34d399"/>
+  <path d="M905 70 1040 156 1102 46M1040 156 953 268M1040 156 1163 220" fill="none" stroke="#6ee7b7" stroke-width="1.5" opacity=".45"/>
+  <rect x="48" y="43" width="55" height="55" rx="15" fill="url(#accent)"/>
+  <text x="75.5" y="79" text-anchor="middle" fill="#08241b" font-family="Arial, sans-serif" font-size="23" font-weight="700">TF</text>
+  <text x="124" y="78" fill="#a7f3d0" font-family="Arial, sans-serif" font-size="17" letter-spacing="2">PORTFOLIO</text>
+  <text x="48" y="159" fill="#f0fdf4" font-family="Arial, sans-serif" font-size="42" font-weight="700">Muhammad Talha Fareedi</text>
+  <text x="50" y="201" fill="#bbd7c9" font-family="Arial, sans-serif" font-size="20">AI engineering  ·  Agentic systems  ·  Wireless research</text>
+  <rect x="48" y="239" width="141" height="38" rx="19" fill="#145c43"/>
+  <text x="118.5" y="264" text-anchor="middle" fill="#d1fae5" font-family="Arial, sans-serif" font-size="15" font-weight="600">LLMs &amp; agents</text>
+  <rect x="201" y="239" width="154" height="38" rx="19" fill="#145c43"/>
+  <text x="278" y="264" text-anchor="middle" fill="#d1fae5" font-family="Arial, sans-serif" font-size="15" font-weight="600">AWS &amp; RunPod</text>
+  <rect x="367" y="239" width="129" height="38" rx="19" fill="#145c43"/>
+  <text x="431.5" y="264" text-anchor="middle" fill="#d1fae5" font-family="Arial, sans-serif" font-size="15" font-weight="600">5G / 6G AI</text>
+</svg>
